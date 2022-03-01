@@ -1,14 +1,13 @@
-import '../styles/App.css';
+import '../App.css';
 import React from 'react';
-import Number from "./Number";
-import logo from "../img/512.png"
+import Otp from "./OtpPage/Otp";
+import Product from "./ProductsPage/Product"
 
 function App() {
   return (
-    <div className='otp-page'>
-      <img src={logo} alt="logo" className='logo'/>
-      <Number />
-      <a href="/">Need help?</a>
+    <div>
+    <Otp />
+    <Product />
     </div>
   );
 }
