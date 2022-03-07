@@ -1,33 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Phone from "./Phone";
+import "./styles/WhiteBtn.css"
 
-function WhiteBtn({img})
+function WhiteBtn(props)
 {
-    const [number, setNumber] = useState("");
-    function numberChange(element){
-      let value=element.value;
-      if(isNaN(value)) return false;
-      
-      setNumber(value);
-      if(value.length > 10){
-        return false;
-      }
-    }
         return(  
-            <div className="number-box">
-            <img src={img} alt="phone" />
-            <div className='nr-input'>
-                <span>+91</span>
-                <input
-                type="tel"
-                name="mobile"
-                label="Enter Phone Number"
-                title='Number'
-                required
-                value={number}
-                maxLength="10"
-                onChange={e => numberChange(e.target)}
-                />
-            </div>
+            <div className="white-box">
+            {
+                (props.img) ? <img src={props.img} alt="phone" /> : <p></p>
+            }
+            {
+                (props.text) ? <p className='white-text'>{props.text}</p> : <Phone />
+            }
             </div>
         )
 }

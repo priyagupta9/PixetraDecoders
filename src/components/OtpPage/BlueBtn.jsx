@@ -1,13 +1,14 @@
-import './styles/Button.css';
+import './styles/BlueBtn.css';
 import React from 'react';
 
-function Bluebtn({text}) {
+function Bluebtn(props) {
     return (
-      <div className='btn-box'>
-        <button className='btn'>
-          {text}
-        </button>
-      </div>
+        <div className="blue-box">
+            {
+              (props.img) ? <img src={props.img} alt="phone" /> : <p></p>
+            }
+            <p className="blue-text">{props.text}</p>
+        </div>
     );
   }
   

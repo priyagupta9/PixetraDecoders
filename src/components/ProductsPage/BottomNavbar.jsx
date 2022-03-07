@@ -14,7 +14,6 @@ function BottomNavbar() {
       <a href='/My-Drafts'><img src={heart} alt="heart-icon" />My Drafts</a>
       <a href='/Account'><img src={account} alt="account-icon" />Accounts</a>
       <a href='/Bag'><img src={bag} alt="bag-icon" />Bag</a>
-
     </div>
   );
 }

@@ -23,7 +23,7 @@ function Number() {
     <div>
       <form action="/" method="post" name="validtelephone">
         <div className="phone">
-        <WhiteBtn img={mobile} />
+        <WhiteBtn img={mobile} text="" />
           <div className="otp-box"> 
             {
               otp.map((data,index) => {
@@ -39,8 +39,8 @@ function Number() {
             }
           </div>
         </div>
-        <Bluebtn text="RESEND OTP"/>
-        <Bluebtn text="CONTINUE"/>
+        <Bluebtn text="RESEND OTP" img="" />
+        <Bluebtn text="CONTINUE" img="" />
       </form>
     </div>
   );
