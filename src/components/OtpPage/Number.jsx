@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import WhiteBtn from './WhiteBtn';
-import "../styles/Number.css";
-import  mobile from "../img/mobile.png"
+import "./styles/Number.css";
+import  mobile from "./img/mobile.png"
 import Bluebtn from "./BlueBtn"
 
 function Number() {
@@ -23,7 +23,7 @@ function Number() {
     <div>
       <form action="/" method="post" name="validtelephone">
         <div className="phone">
-        <WhiteBtn img={mobile} />
+        <WhiteBtn img={mobile} text="" />
           <div className="otp-box"> 
             {
               otp.map((data,index) => {
@@ -39,8 +39,8 @@ function Number() {
             }
           </div>
         </div>
-        <Bluebtn text="RESEND OTP"/>
-        <Bluebtn text="CONTINUE"/>
+        <Bluebtn text="RESEND OTP" img="" />
+        <Bluebtn text="CONTINUE" img="" />
       </form>
     </div>
   );

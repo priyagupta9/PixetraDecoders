@@ -1,0 +1,28 @@
+.white-box{
+    display: flex;
+    background-color: rgb(255 ,255 ,255);
+    border: 2px solid rgb(38, 153, 251);
+    height: 5rem;
+    width: 100%;
+    padding: 1rem 1.3rem;
+    border-radius: 4rem;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.white-box img{
+    position: absolute;
+    left: 2.7rem;
+    background-color: rgb(38, 153, 251);
+    border-radius: 50%;
+    padding: 4px;
+    height: 50px;
+    width: 50px;
+    fill: rgb(255 ,255 ,255);
+}
+.white-text{
+    color: rgb(38, 153, 251);
+    text-transform: uppercase;
+    font-size: 2.7rem;
+    font-weight: bold;
+}
