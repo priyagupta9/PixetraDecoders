@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import WhiteBtn from './WhiteBtn';
 import "./styles/Number.css";
-import  mobile from "./img/mobile.png"
 import Bluebtn from "./BlueBtn"
+import Phone from "./Phone";
 
 function Number() {
   const [otp, setOtp] = useState(new Array(6).fill(""));
@@ -23,7 +22,7 @@ function Number() {
     <div>
       <form action="/" method="post" name="validtelephone">
         <div className="phone">
-        <WhiteBtn img={mobile} text="" />
+        <Phone />
           <div className="otp-box"> 
             {
               otp.map((data,index) => {

@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80vw;
+    width: 100vw;
 }
 .otp-box {
     display: flex;
@@ -21,4 +21,9 @@
     text-align: center;
     font-size: 3rem;
     color: rgb(38, 153, 251);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
