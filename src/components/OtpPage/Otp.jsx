@@ -1,7 +1,7 @@
-import './styles/Otp.css';
+import '../allLogin.css';
 import React from 'react';
 import Number from "./Number";
-import logo from "./img/512.png"
+import logo from "../images/512.png"
 
 function Otp() {
   return (
